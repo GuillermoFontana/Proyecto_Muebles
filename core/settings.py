@@ -139,8 +139,8 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Para que collectstatic los mueva aquí
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'apps', 'vite-project', 'dist'),
     os.path.join(BASE_DIR, 'apps', 'vite-project', 'public'),
-    os.path.join(BASE_DIR, 'apps', 'vite-project', 'dist')#os.path.join(BASE_DIR, 'build/static'),  # React build files o recursos estáticos personalizados
 ]
 
 MEDIA_URL = '/media/'

@@ -4,10 +4,12 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/static/',
   plugins: [react()],
   build: {
     manifest: true,
     outDir: 'dist',
+    emptyOutDir: true,
     rollupOptions: {
       //override default .html entry
       input: './src/main.jsx',
